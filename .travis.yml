@@ -4,9 +4,13 @@ before_install:
 install:
 - sudo apt-get install -qq gcc-avr binutils-avr avr-libc zip
 script:
-- cd rfmsrc && make all
+- cd rfmsrc
+- make all
+- cd ..
 before_deploy:
-- cd rfmsrc/bin && for i in $(ls -d */); do zip ${i%%/}.zip ${i}*; done
+- cd rfmsrc/bin
+- for i in $(ls -d */); do zip ${i%%/}.zip ${i}*; done
+- cd ../..
 deploy:
   provider: releases
   api_key:
