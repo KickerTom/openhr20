@@ -1,11 +1,11 @@
 language: c
 before_install:
-  sudo apt-get update -qq
+- sudo apt-get update -qq
 install:
-  sudo apt-get install -qq gcc-avr binutils-avr avr-libc
+- sudo apt-get install -qq gcc-avr binutils-avr avr-libc
 script:
-  cd rfmsrc
-  make all
+- cd rfmsrc
+- make all
 deploy:
   provider: releases
   api_key:
