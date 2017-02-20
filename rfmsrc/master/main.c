@@ -269,7 +269,6 @@ static inline void init(void)
 
 #if (RFM==1)
 	RFM_init();
-	RFM_OFF();
 #endif
 
     eeprom_config_init(false);
