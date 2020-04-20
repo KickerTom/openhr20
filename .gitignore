@@ -27,13 +27,14 @@
 *.dep
 *.sym
 trunk/source/obj
-rfmsrc/OpenHR20/obj
-rfmsrc/OpenHR20/hr20.txt
-rfmsrc/master/obj
-rfmsrc/master/master.txt
-rfmsrc/bin/*/hr20.txt
-rfmsrc/bin/*/master.txt
-rfmsrc/bin/license.txt
+src/obj
+src/hr20.txt
+rfm-master/obj
+rfm-master/master.txt
+.DS_Store
+bin/*
+!bin/ReadMe.txt
+*.gch
 
 # Eclipse project files
 .cproject
